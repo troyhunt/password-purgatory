@@ -12,7 +12,7 @@ function submit(password) {
             alert(xhr.response);
         }
     }
-    xhr.open('post', `https://api.passwordpurgatory.com/make-hell?password=${urlEncodedPassword}`, true);
+    xhr.open('post', 'https://api.passwordpurgatory.com/make-hell?password=${urlEncodedPassword}', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
     xhr.send();
 }
