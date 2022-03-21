@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="make-hell.js"></script>
-    <link href="make-hell-pretty.css" rel="stylesheet" />
-    <title>Password Purgatory</title>
-  </head>
-  <body>
-    <input autocapitalize="off" autocorrect="off" id="Password" name="Password" placeholder="password" spellcheck="false" type="password" />
-    <button type="submit" id="searchPwnedPasswords" onclick="submit(document.getElementById('Password').value)">make hell</button>
-    <h1>API Documentation</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="make-hell.js"></script>
+  <link href="make-hell-pretty.css" rel="stylesheet" />
+  <title>Password Purgatory</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Password Purgatory" />
+  </header>
+
+  <section id="search">
+    <input autocapitalize="off" autocorrect="off" id="password" name="password" placeholder="enter password"
+      spellcheck="false" type="password" />
+    <button type="submit" id="searchPwnedPasswords" onclick="submit(document.getElementById('password').value)">make
+      hell</button>
+    <p id="response"></p>
+  </section>
+
+  <section>
+    <h1>Documentation</h1>
+    <p>
+      Password Purgatory is an intentionally infuriating API to request inane and ultimately unachievable password
+      criteria intended to deliberately frustrate the user. Regardless of the password used, it will always be rejected
+      hence subjecting the user to "purgatory". Read more in <a
+        href="https://www.troyhunt.com/building-password-purgatory-with-cloudflare-pages-and-workers/">the launch blog
+        post</a>.
+    </p>
+    <h2>Request</h2>
+    <p>
+      There is a single API endpoint that can be invoked with a GET request passing the password as a query string:
+    </p>
+    <code>GET https://api.passwordpurgatory.com/make-hell?password={password}</code>
+    <h2>Response</h2>
+    <p>
+      A JSON response is returned containing a message describing how the password did not meet the required criteria:
+    </p>
+    <code>
+    {
+      "message": "Password must contain at least 1 number"
+    }
+  </code>
+    <h2>Cross-Origin Resource Sharing (CORS)</h2>
+    <p>
+      CORS is enabled to allow calling the API from all origins.
+    </p>
+    <h2>Embedding in an External Website</h2>
+    <p>
+      To orchestrate the request to the API and display of the returned message, the "make-hell.js" JavaScript file can
+      be
+      directly embedded in any consuming websites:
+    </p>
+    <code>
+    &lt;script src="https://passwordpurgatory.com/make-hell.js"&gt;&lt;/script&gt;
+  </code>
+    <p>
+      ToDo: implement SRI integrity check once version is stable
+    </p>
+    <h2>Source Code</h2>
+    <p>
+      All code in Password Purgatory is open source and available on GitHub in the following repositories:
+    </p>
+    <ol>
+      <li>This website: <a
+          href="https://github.com/troyhunt/password-purgatory">github.com/troyhunt/password-purgatory</a></li>
+      <li>The API: <a
+          href="https://github.com/troyhunt/password-purgatory-api">github.com/troyhunt/password-purgatory-api</a></li>
+    </ol>
+  </section>
+
+</body>
+
 </html>
