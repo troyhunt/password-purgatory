@@ -7,8 +7,8 @@
     <title>Password Purgatory</title>
   </head>
   <body style="height: 100vh; background-image: url('logo.jpg'); background-position: center; background-repeat: no-repeat; background-color: black;">
-    <input autocapitalize="off" id="Password" name="Password" placeholder="password" spellcheck="false" type="password" />
-    <button type="submit" id="searchPwnedPasswords">make hell</button>
+    <input autocapitalize="off" autocorrect="off" id="Password" name="Password" placeholder="password" spellcheck="false" type="password" />
+    <button type="submit" id="searchPwnedPasswords" onclick="submit(document.getElementById('Password').value)">make hell</button>
     <h1>API Documentation</h1>
   </body>
 </html>
