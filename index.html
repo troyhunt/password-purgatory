@@ -43,46 +43,56 @@
         the launch blog post</a>.
     </p>
 
-    <h2>Request</h2>
-    <p>
-      There is a single API endpoint that can be invoked with a GET request passing the password as a query string:
-    </p>
-    <code>GET https://api.passwordpurgatory.com/make-hell?password={password}</code>
+    <article>
+      <h2>Request</h2>
+      <p>
+        There is a single API endpoint that can be invoked with a GET request passing the password as a query string:
+      </p>
+      <code>GET https://api.passwordpurgatory.com/make-hell?password={password}</code>
+    </article>
 
-    <h2>Response</h2>
-    <p>
-      A JSON response is returned containing a message describing how the password did not meet the required criteria:
-    </p>
-    <code>{ "message": "Password must contain at least 1 number" }</code>
+    <article>
+      <h2>Response</h2>
+      <p>
+        A JSON response is returned containing a message describing how the password did not meet the required criteria:
+      </p>
+      <code>{ "message": "Password must contain at least 1 number" }</code>
+    </article>
 
-    <h2>Cross-Origin Resource Sharing (CORS)</h2>
-    <p>
-      CORS is enabled to allow calling the API from all origins.
-    </p>
+    <article>
+      <h2>Cross-Origin Resource Sharing (CORS)</h2>
+      <p>
+        CORS is enabled to allow calling the API from all origins.
+      </p>
+    </article>
 
-    <h2>Embedding in an External Website</h2>
-    <p>
-      To orchestrate the request to the API and display of the returned message, the "make-hell.js" JavaScript file can
-      be
-      directly embedded in any consuming websites:
-    </p>
-    <code>&lt;script src="https://passwordpurgatory.com/make-hell.js"&gt;&lt;/script&gt;</code>
-    <p>
-      ToDo: implement SRI integrity check once version is stable
-    </p>
+    <article>
+      <h2>Embedding in an External Website</h2>
+      <p>
+        To orchestrate the request to the API and display of the returned message, the "make-hell.js" JavaScript file can
+        be
+        directly embedded in any consuming websites:
+      </p>
+      <code>&lt;script src="https://passwordpurgatory.com/make-hell.js"&gt;&lt;/script&gt;</code>
+      <p>
+        ToDo: implement SRI integrity check once version is stable
+      </p>
+    </article>
 
-    <h2>Source Code</h2>
-    <p>
-      All code in Password Purgatory is open source and available on GitHub in the following repositories:
-    </p>
-    <ol>
-      <li>This website:
-        <a href="https://github.com/troyhunt/password-purgatory">github.com/troyhunt/password-purgatory</a>
-      </li>
-      <li>The API:
-        <a href="https://github.com/troyhunt/password-purgatory-api">github.com/troyhunt/password-purgatory-api</a>
-      </li>
-    </ol>
+    <article>
+      <h2>Source Code</h2>
+      <p>
+        All code in Password Purgatory is open source and available on GitHub in the following repositories:
+      </p>
+      <ol>
+        <li>This website:
+          <a href="https://github.com/troyhunt/password-purgatory">github.com/troyhunt/password-purgatory</a>
+        </li>
+        <li>The API:
+          <a href="https://github.com/troyhunt/password-purgatory-api">github.com/troyhunt/password-purgatory-api</a>
+        </li>
+      </ol>
+    </article>
   </section>
 
 </body>
