@@ -1,4 +1,4 @@
-function submit(password) {
+function submitHell(password) {
     var urlEncodedPassword = encodeURIComponent(password)
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
