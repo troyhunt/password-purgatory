@@ -8,11 +8,11 @@ body, a {
     color: white;
 }
 
-header{
+header {
     text-align: center;
 }
 
-header img{
+header img {
     max-width: 100%;
 }
 
@@ -40,7 +40,7 @@ code {
     text-align: center;
 }
 
-#response{
+#response {
     padding: 10px;
     border-radius: 4px;
     color: red;
