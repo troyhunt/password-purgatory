@@ -4,7 +4,6 @@ async function submitHell(password, feedback) {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
     });
     let params = {
-        method: "post",
         headers,
         mode: 'cors'
     };
