@@ -1,48 +1,50 @@
 body {
-    height: 100vh;
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
 }
 
-body, a {
-    color: white;
+body,
+a {
+  color: white;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 header img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 input {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 button {
-    background-color: #fc9707;
-    font-size: 2em;
+  background-color: #fc9707;
+  font-size: 2em;
 }
 
-h1, h2 {
-    color: #fc9707;
+h1,
+h2 {
+  color: #fc9707;
 }
 
 code {
-    background-color: #fadf2e;
-    border-radius: 4px;
-    padding: 10px;
-    color: black;
+  background-color: #fadf2e;
+  border-radius: 4px;
+  padding: 10px;
+  color: black;
 }
 
 #search {
-    text-align: center;
+  text-align: center;
 }
 
 #response {
-    padding: 10px;
-    border-radius: 4px;
-    color: red;
-    font-size: 2em;
+  padding: 10px;
+  border-radius: 4px;
+  color: red;
+  font-size: 2em;
 }
