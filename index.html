@@ -16,7 +16,10 @@
   </header>
 
   <section id="search">
-    <form onsubmit="submitHell(document.getElementById('password').value);return false;">
+    <form onsubmit="submitHell(
+      document.getElementById('password').value,
+      document.getElementById('response')
+      );return false;">
       <input autocapitalize="off" autocorrect="off" id="password" name="password" placeholder="enter password"
         spellcheck="false" type="password" />
       <button type="submit" id="searchPwnedPasswords">make
