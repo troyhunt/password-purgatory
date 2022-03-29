@@ -14,12 +14,7 @@
     </header>
 
     <section id="search">
-      <form
-        onsubmit="submitHell(
-      document.getElementById('password').value,
-      document.getElementById('response')
-      );return false;"
-      >
+      <form id="passwordPurgatory">
         <input
           autocapitalize="off"
           autocorrect="off"
@@ -66,7 +61,7 @@
 
       <h2>Cross-Origin Resource Sharing (CORS)</h2>
       <p>CORS is enabled to allow calling the API from all origins.</p>
-      
+
       <h2>Embedding in an External Website</h2>
       <p>
         To orchestrate the request to the API and display of the returned
@@ -77,6 +72,12 @@
         &lt;script
         src="https://passwordpurgatory.com/make-hell.js"&gt;&lt;/script&gt;
       </code>
+      <p>The script expects the embedding page to provide the following:</p>
+      <ol>
+        <li>A form named &quot;passwordPurgatory&quot;</li>
+        <li>A password field named &quot;password&quot;</li>
+        <li>An element for the response named &quot;response&quot;</li>
+      </ol>
       <p>ToDo: implement SRI integrity check once version is stable</p>
 
       <h2>Source Code</h2>

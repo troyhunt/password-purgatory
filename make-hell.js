@@ -1,3 +1,18 @@
+window.addEventListener("load", function () {
+  document
+    .getElementById("passwordPurgatory")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let password = document.getElementById("password").value;
+      let feedback = document.getElementById("response");
+
+      submitHell(password, feedback);
+
+      return false;
+    });
+});
+
 async function submitHell(password, feedback) {
   let url = `https://api.passwordpurgatory.com/make-hell?password=${encodeURIComponent(
     password
