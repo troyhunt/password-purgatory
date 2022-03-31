@@ -8,6 +8,14 @@ Contributions welcome! Here's what needs to be done:
 3. Add the API docs at the bottom of the page
 4. Make it all look pretty and cross-device friendly 😊
 
+---
+
+[Blog post introducing the project](https://www.troyhunt.com/building-password-purgatory-with-cloudflare-pages-and-workers/)
+
+[Live site](https://password-purgatory.pages.dev/)
+
+---
+
 ## Code Formatting
 Had a little Twitter discussion re code formatting here: https://twitter.com/troyhunt/status/1506395329255514112
 
