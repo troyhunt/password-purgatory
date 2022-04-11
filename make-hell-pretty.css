@@ -32,6 +32,7 @@ h2 {
 }
 
 code {
+  display: inline-block;
   background-color: #fadf2e;
   border-radius: 4px;
   padding: 10px;
