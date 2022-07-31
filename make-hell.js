@@ -14,8 +14,8 @@ window.addEventListener("load", function () {
 });
 
 async function submitHell(password, feedback) {
-  // Clear out the existing response
-  feedback.innerHTML = "";
+  // Hide the existing response
+  feedback.style.display = "none";
 
   let url = `https://api.passwordpurgatory.com/make-hell?password=${encodeURIComponent(
     password
@@ -36,5 +36,6 @@ async function submitHell(password, feedback) {
   // Add a visible delay before showing the response
   setTimeout(function () {
     feedback.innerHTML = json.message;
+    feedback.style.display = "block";
   }, 900);
 }
