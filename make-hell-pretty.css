@@ -2,6 +2,7 @@ body {
   height: 100vh;
   background-color: black;
   font-family: "Courier New", Courier, monospace;
+  padding: 20px;
 }
 
 body,
@@ -31,12 +32,44 @@ h2 {
   color: #fc9707;
 }
 
-code {
+h2 {
+  margin-bottom: 0.2em;
+}
+
+code,
+.spammer-hell-summary {
   display: inline-block;
   background-color: #fadf2e;
   border-radius: 4px;
   padding: 10px;
   color: black;
+}
+
+.spammer-hell-summary {
+  font-size: 2em;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  margin-top: 0.3em;
+  margin-bottom: 3em;
+}
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
 }
 
 #search {
