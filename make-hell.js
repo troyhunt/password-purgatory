@@ -35,7 +35,7 @@ async function submitHell(password, feedback) {
 
   // Add a visible delay before showing the response
   setTimeout(function () {
-    feedback.innerHTML = json.message;
+    feedback.textContent = json.message;
     feedback.style.display = "block";
   }, 900);
 }
