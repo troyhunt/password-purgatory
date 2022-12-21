@@ -85,10 +85,10 @@
         In order to enable logging you will need to first deploy the logger on Cloudflare <a href="https://github.com/troyhunt/password-purgatory-logger"
         >github.com/troyhunt/password-purgatory-logger</a
       >.<br>
-        Once that is done, you will then need to include the following scripts in your code making sure to replace the API domain with your own Cloudflare worker domain.
+        Once that is done, you will then need to include the following scripts in your code making sure to replace the logger domain with your own Cloudflare worker domain.
       </p>
       <code>
-        &lt;script&gt;let apiDomain = &quot;https://my-password-purgatory-logger.my-username.workers.dev&quot;;&lt;/script&gt;<br>
+        &lt;script&gt;let loggerDomain = &quot;https://my-password-purgatory-logger.my-username.workers.dev&quot;;&lt;/script&gt;<br>
 &lt;script src=&quot;https://passwordpurgatory.com/log-hell.js&quot;&gt;&lt;/script&gt;
       </code>
 
