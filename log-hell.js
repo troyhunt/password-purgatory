@@ -20,10 +20,7 @@ window.addEventListener("load", function () {
 
 async function logHell(kvKey, criteria, password) {
   (async () => {
-    console.log(document.currentScript.getAttribute('domain'));
-    let domain = document.currentScript.getAttribute('domain');
-//      let domain = document.currentScript.getAttribute('domain') ?? "https://api.passwordpurgatory.com"
-    console.log(document.currentScript.getAttribute('domain'));
+     let domain = apiDomain ?? "https://api.passwordpurgatory.com"
     console.log(domain);
     const rawResponse = await fetch(
       domain + "/log-hell",
