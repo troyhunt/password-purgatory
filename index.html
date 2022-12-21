@@ -80,6 +80,21 @@
       </ol>
       <p>ToDo: implement SRI integrity check once version is stable</p>
 
+      <h2>Enabeling Logging</h2>
+      <p>
+        In order to enable logging you will need to first deploy the logger on Cloudflare https://github.com/troyhunt/password-purgatory-logger:
+      </p>
+      <code>
+        &lt;script&gt;let apiDomain = &quot;https://my-password-purgatory-logger.username.workers.dev&quot;;&lt;/script&gt;
+      </code>
+      <p>The script expects the embedding page to provide the following:</p>
+      <ol>
+        <li>A form named &quot;passwordPurgatory&quot;</li>
+        <li>A password field named &quot;password&quot;</li>
+        <li>An element for the response named &quot;response&quot;</li>
+      </ol>
+      <p>ToDo: implement SRI integrity check once version is stable</p>
+
       <h2>Source Code</h2>
       <p>
         All code in Password Purgatory is open source and available on GitHub in
