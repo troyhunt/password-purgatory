@@ -21,7 +21,7 @@ window.addEventListener("load", function () {
 async function logHell(kvKey, criteria, password) {
   (async () => {
     const rawResponse = await fetch(
-      "https://api.passwordpurgatory.com/log-hell",
+      "https://password-purgatory-logger.jlynx.workers.dev/log-hell",
       {
         method: "POST",
         headers: {
