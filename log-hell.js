@@ -20,8 +20,9 @@ window.addEventListener("load", function () {
 
 async function logHell(kvKey, criteria, password) {
   (async () => {
+    let domain = document.currentScript.getAttribute('domain') ?? "https://api.passwordpurgatory.com"
     const rawResponse = await fetch(
-      "https://password-purgatory-logger.jlynx.workers.dev/log-hell",
+      domain + "/log-hell",
       {
         method: "POST",
         headers: {
