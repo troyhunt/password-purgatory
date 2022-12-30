@@ -20,8 +20,10 @@ window.addEventListener("load", function () {
 
 async function logHell(kvKey, criteria, password) {
   (async () => {
+    // Specify your own domain using the apiDomain varaible. If nothing defined, then stick to the default
+    let domain = typeof loggerDomain !== 'undefined' ? loggerDomain : "https://api.passwordpurgatory.com";
     const rawResponse = await fetch(
-      "https://api.passwordpurgatory.com/log-hell",
+      domain + "/log-hell",
       {
         method: "POST",
         headers: {
