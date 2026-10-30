@@ -1,0 +1,5 @@
+name = "password-purgatory-api"
+main = "index.js"
+
+workers_dev = true
+compatibility_date = "2022-03-10"

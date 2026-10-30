@@ -1,0 +1,9 @@
+{
+  "name": "password-purgatory-web",
+  "private": true,
+  "description": "Static website and embeddable browser scripts",
+  "scripts": {
+    "check": "node --check make-hell.js && node --check log-hell.js",
+    "dev": "wrangler pages dev . --port 8788 --inspector-port 9232"
+  }
+}

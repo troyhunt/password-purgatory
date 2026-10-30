@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "password-purgatory-logger",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for password attempt logging and results pages",
+  "main": "index.js",
+  "scripts": {
+    "check": "node --check index.js",
+    "build": "wrangler deploy --dry-run --outdir .wrangler/dist",
+    "dev": "wrangler dev --local --port 8789 --inspector-port 9231",
+    "deploy": "wrangler deploy",
+    "format": "prettier --write \"**/*.{js,css,json,md}\""
+  },
+  "author": "Troy Hunt <github@troyhunt.com>",
+  "license": "MIT",
+  "dependencies": {
+    "html-entities": "^2.3.3"
+  }
+}

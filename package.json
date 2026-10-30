@@ -1,0 +1,25 @@
+{
+  "name": "password-purgatory",
+  "private": true,
+  "description": "Deliberately making password creation hell",
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "apps/logger"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "check": "npm run check --workspaces",
+    "build": "npm run build --workspaces --if-present",
+    "dev:web": "npm run dev --workspace password-purgatory-web --",
+    "dev:api": "npm run dev --workspace password-purgatory-api --",
+    "dev:logger": "npm run dev --workspace password-purgatory-logger --",
+    "format": "npm run format --workspaces --if-present"
+  },
+  "devDependencies": {
+    "prettier": "1.19.1",
+    "wrangler": "4.156.0"
+  }
+}
