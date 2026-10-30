@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="make-hell.js"></script>
+    <script src="log-hell.js"></script>
     <link href="make-hell-pretty.css" rel="stylesheet" />
     <title>Password Purgatory - Making Life Hell for Spammers</title>
   </head>
@@ -82,8 +83,9 @@
 
       <h2>Enabling Logging</h2>
       <p>
-        In order to enable logging you will need to first deploy the logger on Cloudflare <a href="https://github.com/troyhunt/password-purgatory-logger"
-        >github.com/troyhunt/password-purgatory-logger</a
+        In order to enable logging you will need to first deploy the logger on Cloudflare.
+        See the <a href="https://github.com/troyhunt/password-purgatory/tree/main/apps/logger"
+        >logger documentation</a
       >.<br>
         Once that is done, you will then need to include the following scripts in your code making sure to replace the logger domain with your own Cloudflare worker domain.
       </p>
@@ -95,25 +97,25 @@
       <h2>Source Code</h2>
       <p>
         All code in Password Purgatory is open source and available on GitHub in
-        the following repositories:
+        the <a href="https://github.com/troyhunt/password-purgatory">Password Purgatory repository</a>:
       </p>
       <ol>
         <li>
           This website:
-          <a href="https://github.com/troyhunt/password-purgatory"
-            >github.com/troyhunt/password-purgatory</a
+          <a href="https://github.com/troyhunt/password-purgatory/tree/main/apps/web"
+            >apps/web</a
           >
         </li>
         <li>
           The API:
-          <a href="https://github.com/troyhunt/password-purgatory-api"
-            >github.com/troyhunt/password-purgatory-api</a
+          <a href="https://github.com/troyhunt/password-purgatory/tree/main/apps/api"
+            >apps/api</a
           >
         </li>
         <li>
           The Logger:
-          <a href="https://github.com/troyhunt/password-purgatory-logger"
-            >github.com/troyhunt/password-purgatory-logger</a
+          <a href="https://github.com/troyhunt/password-purgatory/tree/main/apps/logger"
+            >apps/logger</a
           >
         </li>
       </ol>

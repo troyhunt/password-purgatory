@@ -1,0 +1,6 @@
+HELL_API_KEY = "local-development-only"
+FROM_EMAIL = ""
+FROM_EMAIL_NAME = ""
+TO_EMAIL = ""
+TO_EMAIL_NAME = ""
+LOGGER_DOMAIN = "http://localhost:8789"

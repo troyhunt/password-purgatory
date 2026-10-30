@@ -1,3 +1,5 @@
+import { encode } from 'html-entities'
+
 addEventListener('fetch', (event) => {
   event.respondWith(handleRequest(event.request))
 })
@@ -21,6 +23,7 @@ async function handleRequest(request) {
 async function createHell(request) {
   // Logging requires an API key to ensure the endpoint isn't abused and used to write garbage to KV
   const apiKey = request.headers.get('hell-api-key')
+
   if (apiKey !== HELL_API_KEY) {
     return new Response('Incorrect API key', { status: 401 })
   }
